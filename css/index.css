@@ -520,7 +520,50 @@ main .row + .row {
 	}
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
+    #page-header {
+        align-items: center;
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .nav {
+        margin: 1rem auto 1.5rem;
+    }
+
+    .logo-container {
+        margin: 1.5rem auto 1rem;
+        order: -1;
+    }
+
+    .container {
+        margin-top: 140px;
+    }
+
+    .container main {
+        padding: 1rem;
+    }
+
+    .container .row,
+    #page-footer section {
+        padding: 0;
+    }
+
+    .cta-hero {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cta-image {
+        display: none;
+    }
+
+    .container .content-closing {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
 	html {
 		font-size: 70%
 	}
@@ -603,7 +646,7 @@ main .row + .row {
 		position: absolute;
 		right: 2rem;
 		text-align: center;
-		top: 0.4rem;
+		top: 1.1rem;
 		width: 3.4rem;
 	}
 
@@ -666,63 +709,81 @@ main .row + .row {
 		top: 0;
 		width: 100vw;
 		z-index: 1;
-	}
+    }
 
-	main {
-		margin: 2rem;
-		padding: 2rem 1rem;
-	}
-	
-	.row,
-	.row + .row,
-	main .row,
-	main .row + .row {
-		margin: 0;
-		padding: 0;
-	}
-	
-	.row {
-		flex-wrap: wrap;
-	}
+    .logo-container {
+        margin: 1rem auto;
+    }
+    
+    .container {
+        margin-top: 50px;
+    }
 
-	[class^="col-"] {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-	}
+    main {
+        margin: 2rem;
+        padding: 2rem 1rem;
+    }
 
-	.blurb {
-		display: block;
-		width: 100%;
-	}
+    .row,
+    .row+.row,
+    main .row,
+    main .row+.row {
+        margin: 0;
+        padding: 0;
+    }
 
-	.feature-box,
-	.feature-box + .feature-box {
-		margin-top: 1.5rem;
-		margin: 1.5rem;
-	}
+    .row {
+        flex-wrap: wrap;
+    }
 
-	.blurb h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
+    [class^="col-"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
 
-	.blurb address {
-		margin: 0 auto;
-		width: fit-content;
-	}
+    .container main {
+        margin: 1.5rem 0;
+    }
 
-	.content-closing .blurb {
-		margin: 1.5rem;
-		padding: 1.5rem;
-	}
+    .blurb {
+        display: block;
+        width: 100%;
+    }
 
-	.services-info-img {
-		width: unset;
-	}
+    .feature-box,
+    .feature-box+.feature-box {
+        margin-top: 1.5rem;
+        margin: 1.5rem;
+    }
 
-	.legal-info small {
-		font-size: 1.2rem;
-	}
+    .blurb h2 {
+        font-size: 2rem;
+    }
+
+    .blurb address {
+        width: fit-content;
+    }
+
+    .content-closing .blurb {
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .content-closing .img-center {
+        display: none;
+    }
+
+    .fact {
+        font-size: 1.5rem;
+    }
+
+    .legal-info {
+        margin-top: 1rem;
+    }
+
+    .legal-info small {
+        font-size: 1.2rem;
+    }
 }
