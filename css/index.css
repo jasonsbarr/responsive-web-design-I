@@ -550,7 +550,7 @@ main .row + .row {
     }
 
     .cta-hero,
-    .cta-content {
+    .cta-hero .cta-content {
         width: 100%;
     }
     
