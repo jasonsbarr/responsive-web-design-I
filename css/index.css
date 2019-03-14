@@ -549,9 +549,13 @@ main .row + .row {
         padding: 0;
     }
 
+    .cta-hero,
+    .cta-content {
+        width: 100%;
+    }
+    
     .cta-hero {
         justify-content: center;
-        width: 100%;
     }
 
     .cta-image {
