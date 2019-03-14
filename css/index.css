@@ -599,25 +599,30 @@ main .row + .row {
 
 	.nav-list {
 		display: block;
-		left: 50%;
-		max-width: 15rem;
-		position: relative;
+        position: relative;
+        margin: 0;
 		top: 50%;
-		transform: translate(-50%, -50%);
+        transform: translateY(-50%);
+        width: 100%;
 	}
 
 	.nav-item {
+        border-top: 1px solid #000000;
 		display: list-item;
-		font-size: 2.5rem;
+        font-size: 2.5rem;
 		text-align: center;
 	}
 
 	.nav-item,
 	.nav-item+.nav-item {
-		margin: 0.5rem;
-		padding: .5rem 1rem;
+		margin: 0;
+		padding: 1.5rem;
 		transition: all .2s ease-in-out;
-	}
+    }
+    
+    .nav-item:last-child {
+        border-bottom: 1px solid #000000;
+    }
 
 	.nav-item:hover {
 		background-color: #dedede;
